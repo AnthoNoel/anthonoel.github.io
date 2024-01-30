@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- nouveau -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Portfolio Anthony NOEL</title>
+</head>
+
+<body>
+    <header class="bg-image " style="background-image: url(../images/background.jpg); height: 50vh">
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light w-50">
+            <div class="container-fluid">
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Ici on ajoute la classe justify-content-end pour aligner les éléments de menu sur la droite -->
+                <!-- On pense aussi à retirer l'élément de l'exemple "disabled" -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="">ACCUEIL <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link  text-white " href="#intro">A PROPOS DE MOI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#projet">MES PROJETS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1 class="header mt-5 pt-5 text-white">ANTHONY NOEL</h1>
+        <h2 class="header h2 text-white pt-3">DEVELOPPEUR WEB FULL STACK</h2>
+        <p class="header h2 text-white">SYMFONY</p>
+    </header>
+    <main class=" w-100  justify-content-center flex-column col-md-12 ">
+        <div id="intro">
+            <h2 class="intro h2 position-relative bg-white p-3 fs-3 text-center w-25 m-auto" style="bottom: 30px">A
+                PROPOS DE MOI</h2>
+            <img class="intro text d-flex text-left mt-5 flex-column col-md-12 d-none d-lg-block" src="../images/looking.jpg"
+                alt="Personne qui regarde">
+            <section class="intro text d-flex text-left mt-5 flex-column col-md-12 p-3">
+                <p class="mb-5">
+                    Bonjour à toi qui passe par ici &#128540 <br><br>
+                    Mécanicien Régleur en usine depuis presque 8 ans , après des nuits/week end de travail loin de ma
+                    famille j'ai décidé de faire une reconversion professionnel dans le Développement Web qui me faisait
+                    de l'oeil depuis ma première année de lycée. <br><br>
+                    Je me suis donc formé a l'école O'clock ou je me suis spécialisé en spé Symfony où l'ont a fait
+                    principalement du PHP et comment dire ? J'AI ADORÉ !!! Ce fût 6 mois intensif 9h/19h presque tous
+                    les jours mais a quel prix ? D'une vie professionnel pleine de passions ? Certainement !
+                </p>
+                <table class="text-center border border-dark p-5 ">
+                    <thead class="bg-primary">
+                        <tr>
+                            <th colspan="2" class="p-2">DEVELOPPEMENT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-dark text-white">
+                            <td class="w-50 p-2 ">LANGUAGE</td>
+                            <td class="w-50">NOTE</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3">HTML</td>
+                            <td class="p-3">&#9733; &#9733; &#9733; &#9733; &#9733;</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3">CSS</td>
+                            <td class="p-3">&#9733; &#9733; &#9733; &#9733;</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3">PHP</td>
+                            <td class="p-3">&#9733; &#9733; &#9733;</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3">SYMFONY</td>
+                            <td class="p-3">NOTE</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3">JS/BOOTSTRAP</td>
+                            <td class="p-3">&#9733; &#9733; &#9733;</td>
+                        </tr>
+                        <td class="p-3">SQL</td>
+                        <td class="p-3">&#9733; &#9733; &#9733; </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3">GIT/GITHUB</td>
+                            <td class="p-3">&#9733; &#9733; &#9733;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <section id="projet">
+        <div class="projet bg-secondary w-100 mt-5 pb-5 ">
+            <h2 class="projet h2 position-relative p-3 fs-3 text-center bg-secondary w-25 m-auto" style="bottom: 30px">
+                MES PROJETS</h2>
+
+            <div class="bg-secondary d-flex flex-row justify-content-center text-center col-12 ">
+                <article class="card mb-4 position-relative bg-light col-md-3 mt-5 ">
+                    <div class="card-header">PROJET 1</div>
+                    <div class="card-body d-none d-lg-block"><img src="../images/article-1.jpg" alt="article 1"></div>
+                    <div class="card-body">Courte présentation projet1</div>
+                    <small class="card-footer">En savoir plus</small>
+                    <a class="position-absolute w-100 h-100" href="#"></a>
+                </article>
+                <article class="card mb-4 position-relative col-md-3 m-5">
+                    <div class="card-header">PROJET 2</div>
+                    <div class="card-body d-none d-lg-block"><img src="../images/article-2.jpg" alt="article 2"></div>
+                    <div class="card-body">Courte présentation projet2</div>
+                    <small class="card-footer">En savoir plus</small>
+                    <a class="position-absolute w-100 h-100" href="#"></a>
+                </article>
+                <article class="card mb-4 position-relative col-md-3 mt-5">
+                    <div class="card-header">PROJET 3</div>
+                    <div class="card-body d-none d-lg-block"><img src="../images/article-3.jpg" alt="article 3"></div>
+                    <div class="card-body">Courte présentation projet3</div>
+                    <small class="card-footer">En savoir plus</small>
+                    <a class="position-absolute w-100 h-100" href="#"></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="form bg-dark d-flex flex-column">
+            <h2 class="contact h2 position-relative p-3 fs-3 text-center bg-dark w-25 m-auto text-white" style="bottom: 30px">CONTACT</h2>
+            <section class="formf d-flex">
+            <form class = " bg-dark text-white w-50 rr-5 d-flex m-4 " action="#" method="post">
+                <ul class=" d-flex flex-column w-100 ">
+                  <li class="m-5">
+                    <label for="sujet" class ="d-flex  flex-column pb-1 ">Sujet        </label>
+                    <select name="sujet" class="bg-secondary w-100" id="sujet-select">
+                    <option value="Option" >--Merci de choisir une option--</option>
+                    <option value="Travail">Travail</option>
+                    <option value="Question">Question</option>
+                    <option value="Autre">Autre</option>
+                </select>
+                  </li>
+                  <li class="m-5 ">
+                    <label for="name" class ="d-flex  flex-column pb-1">Prénom&nbsp;:</label>
+                    <input type="text" placeholder="Votre prénom" class="bg-secondary w-100" id="name" name="user_name" />
+                  </li>
+                  <li class="m-5">
+                    <label for="mail" class ="d-flex  flex-column pb-1">E-mail&nbsp;:</label>
+                    <input type="email"  placeholder="Votre e-mail" class="bg-secondary w-100" id="mail" name="user_mail" />
+                  </li>
+                  <li class="m-5">
+                    <label for="msg" class ="d-flex  flex-column pb-1">Message&nbsp;:</label>
+                    <textarea id="msg" placeholder="Votre message ici" class="bg-secondary w-100" name="user_message"></textarea>
+                  </li>
+                  <div class="controls d-flex ">
+                  <button type="button" class="btn m-2 w-25">Envoyez</button>
+                  <button type="reset" class="btn m-2 w-25">Reset</button>
+                </div>
+                </ul>
+              </form>
+              <div class="message text-white w-50 m-4">
+                  <p>Si vous souhaitez discuter de l'un de mes projets, ou encore de la pluie et du beau temps ou d'une éventuelle proposition de travail n'hésitez pas à me contacter </p>
+              </div>
+            </section>
+        </div>
+    </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
