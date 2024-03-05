@@ -2,7 +2,7 @@ const playBoard = document.querySelector(".play-board");
 const scoreElement = document.querySelector(".score");
 const scoreMaxElement = document.querySelector(".high-score");
 const controls = document.querySelectorAll(".controls i");
-
+const up = document.querySelector(".up i")
 
 let gameOver = false;
 
@@ -52,6 +52,7 @@ const changeDirectionSnake = (e) => {
 controls.forEach(key => {
     key.addEventListener('click', () => changeDirectionSnake({key: key.dataset.key}))
 })
+up.addEventListener('click', () => changeDirectionSnake({key: up.dataset.key}));
 const initGame = () => {
 
     
