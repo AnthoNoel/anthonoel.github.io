@@ -31,8 +31,10 @@ const handleGameOver = () => {
     
 }
 const changeDirectionSnake = (e) => {
-    e.preventDefault()
-    
+    // prevent to scroll, just activate for keyboard arrow
+    if (e.keyCode && keyCodes.indexOf(e.keyCode) !== -1){
+        e.preventDefault();
+    }
     // Direction for keyboard
     if (e.key === 'ArrowUp' && positionX != 1){
         positionX = -1;
