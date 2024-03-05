@@ -90,14 +90,13 @@ SNAKE
 }
 
 .up i {
-    
+
     padding: 25px 0;
     text-align: center;
     cursor: pointer;
     color: #B8C6DC;
     font-size: 1.3rem;
     width: 25%;
-    height: 20px;
     border: 1px solid #171b26;
     
     
