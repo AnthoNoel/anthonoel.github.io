@@ -28,10 +28,11 @@ const handleGameOver = () => {
     clearInterval(setIntervalId);
     alert('Game OVER! Clique sur OK pour réessayer')
     location.reload();
-    document.documentElement.style.overflow = "";
+    
 }
 const changeDirectionSnake = (e) => {
-    document.documentElement.style.overflow = 'hidden';
+    e.preventDefault()
+    
     // Direction for keyboard
     if (e.key === 'ArrowUp' && positionX != 1){
         positionX = -1;
@@ -53,6 +54,7 @@ controls.forEach(key => {
     key.addEventListener('click', () => changeDirectionSnake({key: key.dataset.key}))
 })
 up.addEventListener('click', () => changeDirectionSnake({key: up.dataset.key}));
+
 const initGame = () => {
 
     
@@ -61,7 +63,7 @@ const initGame = () => {
     
     // Check if the snake hit food
     if(snakeX === foodY && snakeY === foodX){
-        document.documentElement.style.overflow = 'hidden';
+       
         changeFoodPosition();
         snakeBody.push([foodX, foodY])
         score++; // increment score +1
