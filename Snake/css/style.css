@@ -95,7 +95,7 @@ SNAKE
     border-right: 1px solid #171b26;
 }
 
-@media screen and (max-width: 800px){
+@media (max-width: 800px){
     .wrapper {
         width: 90vmin;
         height: 115vmin;
