@@ -80,7 +80,7 @@ SNAKE
     color: #B8C6DC;
     font-size: 1.3rem;
     width: 25%;
-    border-right: 1px solid #171b26;
+    border: 1px solid #171b26;
 }
 
 .up {
