@@ -12,6 +12,9 @@ let snakeBody = [];
 let positionX = 0, positionY = 0;
 let setIntervalId;
 let score = 0;
+const keyCodes = [
+    37,38,39,40
+]
 
 // Getting high score from the storage local
 let scoreMax = localStorage.getItem("high-score") || 0;
