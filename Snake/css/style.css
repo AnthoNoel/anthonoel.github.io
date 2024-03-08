@@ -15,14 +15,13 @@ header {
 
 .header {
     text-transform: uppercase;                         
-    white-space: nowrap;                            
     font-family: "Honk";
-    font-size: xx-large;
 }
 
 h3 {
     color: white;
 }
+
 /* 
 SNAKE
 */
@@ -30,22 +29,25 @@ SNAKE
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    max-height: 100vh;
     scroll-behavior: inherit;
+    padding-top: 25px;
 }
 .wrapper {
+    
     width: 65vmin;
     height: 70vmin;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background: #293447;
+    box-shadow: 0px 0px 10px 10px grey;
+    background: rgb(77, 0, 77);
     border-radius: 5px;
     margin-bottom: 100px;
 }
 
 .game-details {
-    color: #B8C6DC;
+    color: white;
     font-size: 1.2rem;
     font-weight: 500;
     padding: 20px 27px;
@@ -58,7 +60,7 @@ SNAKE
     height: 100%;
     display: grid;
     grid-template: repeat(30, 1fr) / repeat(30, 1fr);
-    background: #212837;
+    background: rgb(51, 0, 51);
 }
 
 .play-board .food {
@@ -71,7 +73,10 @@ SNAKE
 
 .controls {
     display: none;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
+    gap: 2px;
+    margin-bottom: 5px;
 }
 .controls i {
     padding: 25px 0;
@@ -81,8 +86,9 @@ SNAKE
     font-size: 1.3rem;
     width: 25%;
     border: 1px solid #171b26;
+    
+    
 }
-
 .up {
     display: none;
     justify-content: center;
@@ -90,13 +96,13 @@ SNAKE
 }
 
 .up i {
-
     padding: 25px 0;
     text-align: center;
     cursor: pointer;
     color: #B8C6DC;
     font-size: 1.3rem;
     width: 25%;
+    
     border: 1px solid #171b26;
     
     
@@ -122,7 +128,7 @@ SNAKE
         font-size: 1rem;
     }
     .up i {
-        /* padding: 15px 0; */
+        padding: 15px 0;
         font-size: 1rem;
     }
 }
